@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seek</title>
+  <script type="text/javascript" src="js/script.js"></script>
+  <link type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>Checkout</h1>
+  <h5>Customer:</h5>
+  <select name="customer" id="customer">
+    <option value="default" selected="selected">Default</option>
+    <option value="unilever">Unilever</option>
+    <option value="apple">Apple</option>
+    <option value="nike">Nike</option>
+  </select>
+  <br><br>
+  <h5>Ad Selection:</h5>
+  <span>Classic: </span><input type="number" name="ad1" id="ad1"><br>
+  <span>Standout: </span><input type="number" name="ad2" id="ad2"><br>
+  <span>Premium: </span><input type="number" name="ad3" id=ad3><br>
+  <br><br>
+  <button type="button" id="checkoutBtn" onclick="calc()">Checkout</button>
+  <br><br>
+  <h5>Total: </h5><br>
+  <span id="total"></span>
+</body>
+</html>
